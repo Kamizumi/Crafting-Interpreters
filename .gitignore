@@ -1,9 +1,31 @@
-# Ignore CLion's build folder everywhere in the project
+# --- macOS System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Generic IDE Files ---
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# --- C / C++ (CLion & CMake) ---
 cmake-build-debug/
 cmake-build-release/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.out
+*.exe
 
-# Ignore CLion's internal configuration settings
-.idea/
-
-# Ignore Mac's system files
-.DS_Store
+# --- Java (jlox & General) ---
+*.class
+*.jar
+*.war
+*.ear
+bin/
+out/
+target/
