@@ -1,0 +1,9 @@
+# Ignore CLion's build folder everywhere in the project
+cmake-build-debug/
+cmake-build-release/
+
+# Ignore CLion's internal configuration settings
+.idea/
+
+# Ignore Mac's system files
+.DS_Store
