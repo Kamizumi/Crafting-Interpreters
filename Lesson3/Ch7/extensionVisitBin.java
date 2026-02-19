@@ -12,7 +12,7 @@ public Object visitBinaryExpr(Expr.Binary expr) {
 
             //If one is a string then we concatenate
             if(left instanceof String || right instanceof String){
-                return stringify(left + stringify(right));
+                return stringify(left) + stringify(right);
             }
 
             throw new RuntimeError(expr.operator,
