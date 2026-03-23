@@ -33,18 +33,3 @@ void push(Value value) {
   *vm.stackTop = value;
   vm.stackTop++;
 }
-
-
-/*
-Costs and Benefits of Changes
------
-Benefits
--Prevents stack overflow crashes
--Allows programs with large expressions
--More flexible and scalable
-------
-Costs
--Slight performance overhead
--Memory allocation during run time
--More complex implementation
-*/
